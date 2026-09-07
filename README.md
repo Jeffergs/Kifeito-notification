@@ -28,10 +28,10 @@ A comunicação com o Tasks é **assíncrona**, utilizando **RabbitMQ**. O estad
 15. [🐳 Docker](#-docker)
 16. [🧪 Testes](#-testes)
 17. [🚫 Fora do escopo da versão 1](#-fora-do-escopo-da-v1)
-18. [📄 Licença](#-licença)
+18. [📄 Licença](#-licenca)
 
 ---
-
+<a id="responsabilidade"></a>
 # 🎯 Responsabilidade
 
 O serviço possui uma responsabilidade específica:
@@ -54,7 +54,7 @@ O **Kifeito Notification** é responsável pelo lembrete e pelo seu estado.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="eventos"></a>
 # 📨 Eventos
 
 O Kifeito Tasks publica eventos relacionados ao ciclo de vida da tarefa.
@@ -95,7 +95,7 @@ O `eventId` identifica unicamente o evento e permite o controle de processamento
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="criar-lembrete"></a>
 # ⏰ Criar lembrete
 
 Quando uma tarefa com `scheduledAt` é criada, o Kifeito Tasks publica o evento:
@@ -125,7 +125,7 @@ scheduledFor = 14:00
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="nviar-lembrete"></a>
 # 📧 Enviar lembrete
 
 O Kifeito Notification verifica os lembretes pendentes que chegaram ao horário de envio.
@@ -170,7 +170,7 @@ Se o envio falhar, o lembrete não deve ser marcado como `SENT`.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="reagendar-lembrete"></a>
 # 🔄 Reagendar lembrete
 
 Quando a data de uma tarefa for alterada, o Kifeito Tasks publica:
@@ -206,7 +206,7 @@ A fonte continua sendo o serviço Tasks.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="cancelar-lembrete"></a>
 # ❌ Cancelar lembrete
 
 Quando uma tarefa é cancelada, o Kifeito Tasks publica:
@@ -236,7 +236,7 @@ Um lembrete com status `CANCELLED` não pode ser enviado.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="cancelar-lembrete-quando-a-tarefa-for-concluída"></a>
 # ✅ Cancelar lembrete quando a tarefa for concluída
 
 Quando uma tarefa é concluída antes do horário do lembrete, o Kifeito Tasks publica:
@@ -268,7 +268,7 @@ SENT
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="reativar-lembrete"></a>
 # 🔓 Reativar lembrete
 
 Quando uma tarefa cancelada é reativada, o Kifeito Tasks publica:
@@ -317,7 +317,7 @@ Nesse caso, o usuário deverá reagendar a tarefa para receber um novo lembrete.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="recriar-lembrete-após-reabertura"></a>
 # 🔄 Recriar lembrete após reabertura
 
 Quando uma tarefa concluída é reaberta, o Kifeito Tasks publica:
@@ -365,7 +365,7 @@ O usuário deverá reagendar a tarefa.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="persistência"></a>
 # 💾 Persistência
 
 O Kifeito Notification possui **banco de dados próprio em PostgreSQL**.
@@ -384,7 +384,7 @@ O Kifeito Notification possui **banco de dados próprio em PostgreSQL**.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="comunicação"></a>
 # 🔗 Comunicação
 
 ```text
@@ -417,7 +417,7 @@ O Kifeito Notification possui **banco de dados próprio em PostgreSQL**.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="tecnologias"></a>
 # 🛠️ Tecnologias
 
 | Tecnologia | Utilização |
@@ -438,7 +438,7 @@ O Kifeito Notification possui **banco de dados próprio em PostgreSQL**.
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="estrutura"></a>
 # 📁 Estrutura
 
 Estrutura inicial:
@@ -502,7 +502,7 @@ kifeito-notification
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="configuração"></a>
 # ⚙️ Configuração
 
 As configurações de banco de dados e SMTP são fornecidas por variáveis de ambiente.
@@ -524,7 +524,7 @@ EMAIL_SENDER_NAME
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="docker"></a>
 # 🐳 Docker
 
 Cada microsserviço possui seu próprio `Dockerfile` e pode ser executado junto aos demais serviços através do Docker Compose.
@@ -534,7 +534,7 @@ O Docker garante um ambiente de execução padronizado, facilita a configuraçã
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="testes"></a>
 # 🧪 Testes
 
 O serviço terá testes unitários para as regras de negócio e testes de integração para suas principais integrações.
@@ -545,7 +545,7 @@ O serviço terá testes unitários para as regras de negócio e testes de integr
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="fora-do-escopo-da-v1"></a>
 # 🚫 Fora do escopo da versão 1
 
 Para manter a complexidade proporcional à necessidade do sistema, a versão 1 não possui:
@@ -560,7 +560,7 @@ Para manter a complexidade proporcional à necessidade do sistema, a versão 1 n
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-
+<a id="licesca"></a>
 # 📄 Licença
 
 O Kifeito está sendo desenvolvido inicialmente para uso próprio e para um grupo limitado de usuários.
