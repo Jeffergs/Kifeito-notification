@@ -27,7 +27,7 @@ A comunicação com o Tasks é **assíncrona**, utilizando **RabbitMQ**. O estad
 14. [⚙️ Configuração](#️-configuração)
 15. [🐳 Docker](#-docker)
 16. [🧪 Testes](#-testes)
-17. [🚫 Fora do escopo da versão 1](#-versao)
+17. [🚫 Fora do escopo da versão 1](#-fora-do-escopo-da-versão-1)
 18. [📄 Licença](#-licença)
 
 ---
