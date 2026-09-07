@@ -27,7 +27,7 @@ A comunicação com o Tasks é **assíncrona**, utilizando **RabbitMQ**. O estad
 14. [⚙️ Configuração](#️-configuração)
 15. [🐳 Docker](#-docker)
 16. [🧪 Testes](#-testes)
-17. [🚫 Fora do escopo da versão 1](#-fora-do-escopo-da-v1)
+17. [🚫 Fora do escopo da versão 1](#-fora-do-escopo-da-versao-1)
 18. [📄 Licença](#-licenca)
 
 ---
@@ -545,7 +545,7 @@ O serviço terá testes unitários para as regras de negócio e testes de integr
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-<a id="fora-do-escopo-da-v1"></a>
+<a id="fora-do-escopo-da-versao-1"></a>
 # 🚫 Fora do escopo da versão 1
 
 Para manter a complexidade proporcional à necessidade do sistema, a versão 1 não possui:
@@ -560,7 +560,7 @@ Para manter a complexidade proporcional à necessidade do sistema, a versão 1 n
 ⬆️ [Voltar ao índice](#indice)
 
 ---
-<a id="licesca"></a>
+<a id="licenca"></a>
 # 📄 Licença
 
 O Kifeito está sendo desenvolvido inicialmente para uso próprio e para um grupo limitado de usuários.
